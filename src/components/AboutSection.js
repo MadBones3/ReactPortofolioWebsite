@@ -3,22 +3,25 @@ import home1 from '../img/home1.png';
 //Styled
 import styled from 'styled-components';
 import {Layout, Description, Hide, Image} from '../styles';
+//framer motion
+import {motion} from 'framer-motion';
 
 const AboutSection = () => {
+
     return(
         <Layout>
             <Description>
-                <div className="title">
+                <motion.div className="title">
                     <Hide>
-                        <h2>We work to make</h2>
+                        <motion.h2 >We work to make</motion.h2>
                     </Hide>
                     <Hide>
-                        <h2>your <span>dreams</span></h2>
+                        <motion.h2 >your <span>dreams</span></motion.h2>
                     </Hide>
                     <Hide>
-                        <h2>come true</h2>
+                        <motion.h2 >come true</motion.h2>
                     </Hide>
-                </div>
+                </motion.div>
                 <p>Contact us for more information and ideas you have. We have professionals with amazing skills!</p>
                 <button>Contact us</button>
             </Description>
