@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import {useScroll} from '../components/useScroll';
+import ScrollTop from '../components/ScrollTop';
+
 //images
 import athlete from '../img/athlete-small.png';
 import theracer from '../img/theracer-small.png';
@@ -45,6 +47,7 @@ const OurWork = () => {
                     <img src={goodtimes} alt="goodtimes" />
                 </Link>
             </Movie>
+            <ScrollTop />
         </Work>
     )
 }
@@ -55,6 +58,9 @@ const Work = styled(motion.div)`
     padding: 5rem 10rem;
     h2 {
         padding: 1rem 0rem;
+    }
+    @media (max-width: 1300px) {
+        padding: 2rem 2rem;
     }
 `;
 const Movie = styled(motion.div)`
