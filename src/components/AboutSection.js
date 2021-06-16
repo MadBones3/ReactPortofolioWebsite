@@ -24,7 +24,7 @@ const AboutSection = () => {
                         <motion.h2 variants={titleAnim}>come true</motion.h2>
                     </Hide>
                 </motion.div>
-                <motion.p variants={fade}>Contact us for more information and ideas you have. We have professionals with amazing skills!</motion.p>
+                <motion.p variants={fade}>Contact us for more information and ideas you have. We have professionals with awesome skills!</motion.p>
                 <motion.button variants={fade}>Contact us</motion.button>
             </Description>
             <Image>
